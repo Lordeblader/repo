@@ -20,6 +20,30 @@ public class Vacuna {
         this.durada = that.durada;
     }
 
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setEfectivitat(float efectivitat) {
+        this.efectivitat = efectivitat;
+    }
+
+    public float getEfectivitat() {
+        return efectivitat;
+    }
+
+    public void setDurada(int durada) {
+        this.durada = durada;
+    }
+
+    public int getDurada() {
+        return durada;
+    }
+
     @Override
     public String toString() {
         return "Vacuna{nom: " + nom + ", efectivitat: " + efectivitat + ", durada: " + durada + "}";
@@ -33,5 +57,10 @@ public class Vacuna {
         }
 
         return false;
+    }
+
+    public static void main(String[] args) {
+        Vacuna v1 = new Vacuna();
+        Vacuna v2 = new Vacuna();
     }
 }
